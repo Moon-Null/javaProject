@@ -2,7 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <title>Example</title>
-  <script src="https://cdn.tiny.cloud/1/iyxky233pl4frm23rnlq6lu5et30bgsuvmn5ulpwsm30iz2f/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/j86byx7kfcf74t341nj1gbyvl0ebdu261tck1fwxtxn3h0c8/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
   <script>
     tinymce.init({
       selector: 'textarea',
@@ -40,7 +41,8 @@
   </script>
 </head>
 <body>
-<form method="post" th:action="@{/submit}" enctype="multipart/form-data">
+<form method="post" th:action="@{/post}" enctype="multipart/form-data">
+  <input placeholder="제목을 입력하시오" name="title" type="text"></input>
   <textarea name="content"></textarea>
   <button type="submit">Submit</button>
 </form>

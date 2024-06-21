@@ -12,8 +12,5 @@ public class MainController {
         model.addAttribute("nickName", SecurityContextHolder.getContext().getAuthentication().getAuthorities());
         return "main";
     }
-    @GetMapping("/post")
-    public String getPost() {
-        return "post";
-    }
+
 }
