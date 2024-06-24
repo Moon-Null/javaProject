@@ -22,5 +22,6 @@ public class PostController {
     public String addPost(String title,String content) {
         postService.addPost(title,content);
         return "main";
+        /* 문까쓰 vs 문카스 vs 문카츠 */
     }
 }
